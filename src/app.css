@@ -1,3 +1,14 @@
 @import 'tailwindcss';
-@plugin '@tailwindcss/forms';
-@plugin '@tailwindcss/typography';
+@import '@fontsource/fira-mono';
+@plugin "daisyui" {
+	themes: lemonade --default, forest --prefersdark;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-attachment: fixed;
+	background-color: var(--color-base-100);
+	background-size: 100vw 100vh;
+	background-image: linear-gradient(180deg, var(--color-base-300) 0%, var(--color-base-200) 15%, var(--color-base-100) 50%);
+}
